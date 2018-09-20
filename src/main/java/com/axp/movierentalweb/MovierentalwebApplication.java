@@ -18,7 +18,7 @@ public class MovierentalwebApplication {
 	ApplicationRunner init(MovieRepository repository) {
 		return args -> {
 			Stream.of("101 Dalmatians", "Avengers", "Pinocchio", "Lion King", "One Flew Over the Cuckoo's nest",
-					"Gone with the Wind", "Casablanca", "Schindler's List", "The Godfather").forEach(name -> {
+					"Deadpool", "Casablanca", "Schindler's List", "The Godfather").forEach(name -> {
 				Movie movie = new Movie();
 				movie.setName(name);
 				repository.save(movie);
